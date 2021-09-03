@@ -20,7 +20,6 @@ export default class NavBar extends Component {
                 </li>
             </ul>
             <Link to="/cart" className="ms-auto"> 
-            {/* classname should push the cart button to the right, seems to only work with smaller screens? */}
                 <ButtonContainer>
                     <span className="mr-2">
                     <i className="fas fa-cart-plus" />

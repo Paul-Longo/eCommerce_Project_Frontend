@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import Product from './Product';
 import Title from './Title';
-import {storeProducts} from "../data";
 import { ProductConsumer } from '../context';
 
 export default class ProductList extends Component {
-    state={
-        products: storeProducts
-        //this pulls in the const from data.js
-    }
+    
     render() {
         // console.log(this.state.products)
         return (
@@ -20,15 +16,15 @@ export default class ProductList extends Component {
                         <div className="row">
                             <ProductConsumer>
                                 {value => {
-                                    console.log(value);
+                                    return value.products.map( product =>{
+                                        return <Product key={product.id} property={product} />;
+                                    })
                                 }}
                             </ProductConsumer>
                         </div>
                     </div>
                 </div>
             </React.Fragment>
-                // <Product />
-
         );
-    }
+    } 
 }

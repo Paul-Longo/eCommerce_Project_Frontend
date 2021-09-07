@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <NavBar />
-        <Login />
+        
         <Switch>
           <Route exact path="/" component={ProductList} />
           <Route path="/details" component={Details} />
@@ -24,7 +24,6 @@ class App extends Component {
           <Route path="/category" component={Category} />
           <Route component={Default} />
         </Switch>
-
 
       </React.Fragment>
     );

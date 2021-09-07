@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 export default class Login extends Component {
     render() {
         return (
+            <center>
             <div className="login-wrapper">
                 <h1>Please Log In</h1>
                 <form>
@@ -19,6 +20,7 @@ export default class Login extends Component {
                     </div>
                 </form>
             </div>
+            </center>
         )
     }
 }

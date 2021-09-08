@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import {ProductConsumer} from '../context';
 
 
+
 export default class Product extends Component {
     render() {
         const {ProductId, ProductName, img, ProductPrice, CategoryId, inCart} = this.props.product;

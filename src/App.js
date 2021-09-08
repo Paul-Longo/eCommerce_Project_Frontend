@@ -9,6 +9,7 @@ import Cart from './Components/Cart';
 import Default from './Components/Default';
 import Category from './Components/Category';
 import Login from './Components/Login';
+import Signup from './Components/Signup';
 
 class App extends Component {
   render() {
@@ -22,6 +23,8 @@ class App extends Component {
           <Route path="/details" component={Details} />
           <Route path="/cart" component={Cart} />
           <Route path="/category" component={Category} />
+          <Route path="/signup" component={Signup} />
+          <Route path="/login" component={Login} />
           <Route component={Default} />
         </Switch>
 
